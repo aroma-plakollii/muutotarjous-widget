@@ -1,0 +1,6 @@
+@import "../node_modules/react-datepicker/dist/react-datepicker.min.css";
+
+.root-widget {
+  width: 100%!important;
+  float: left!important;
+}

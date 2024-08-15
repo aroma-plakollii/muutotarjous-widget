@@ -1,0 +1,413 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400;600;700&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap");
+body {
+  font-family: "Montserrat", sans-serif;
+  font-family: "Nunito", sans-serif;
+}
+.muutto-container {
+  max-width: 1320px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+.muutto-nav {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  border-radius: 4px;
+  gap: 1px;
+  width: 100%;
+  margin-top: 40px;
+}
+
+.muutto-nav__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  min-height: 60px;
+  background-color: #74c92c;
+  flex-basis: 50%;
+  font-size: 18px;
+  padding: 0 10px;
+}
+.muutto-nav__item:hover {
+  transition: ease-in all 0.5s;
+  background-color: #499a04;
+  cursor: pointer;
+}
+.muutto-nav__item span {
+  margin-left: 10px;
+}
+
+.muutto-nav__item.active {
+  background-color: #499a04;
+}
+
+.muutto-nav__item:first-child {
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+
+.muutto-nav__item:last-child {
+  border-top-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+}
+
+.muutto-package {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  list-style-type: none;
+  margin-top: 40px;
+}
+
+.muutto-package__item {
+  font-size: 16px;
+  position: relative;
+  padding: 0.5rem 1rem;
+  color: #212529;
+  text-decoration: none;
+  background-color: #fff;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+  border-left: 1px solid rgba(0, 0, 0, 0.125);
+  border-right: 1px solid rgba(0, 0, 0, 0.125);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.muutto-package__item span.muutto-lead {
+  text-align: right;
+}
+.muutto-package__item span.muutto-lead p {
+  text-align: right;
+  color: #479670;
+}
+
+.muutto-package__item:first-child {
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+.muutto-package__item:last-child {
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+  border-left: 1px solid rgba(0, 0, 0, 0.125);
+  border-right: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+.muutto-badge {
+  font-size: 16px;
+  line-height: 1;
+  color: #fff;
+  border-radius: 4px;
+  background-color: #74c92c;
+  font-weight: 400;
+  min-width: 100px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.muutto-badge:hover {
+  background-color: #499a04;
+  transition: ease-in all 0.5s;
+  cursor: pointer;
+}
+
+.muutto-content__title {
+  font-size: 18px;
+  font-weight: 600;
+}
+.muutto-content__text {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.muutto-input {
+  width: calc(100% - 30px);
+  padding: 0 15px;
+  height: 36px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  outline: none;
+  transition: ease-in all 0.5s;
+}
+
+.muutto-input.is-invalid {
+  border: 1px solid #c21010;
+}
+
+.muutto-select {
+  width: 100%;
+  padding: 0 15px;
+  height: 36px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  outline: none;
+  transition: ease-in all 0.5s;
+  display: block;
+}
+
+.muutto-input:focus,
+.muutto-input:focus-visible,
+.muutto-input:focus-within {
+  border-color: #74c92c;
+  box-shadow: none;
+}
+
+.muutto-input-group.custom {
+  display: flex;
+}
+
+.muutto-input-group.custom .muutto-input {
+  flex-grow: 1;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.muutto-input-group.custom button.muutto-button {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.muutto-button {
+  border: none;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  line-height: 1;
+  color: #fff;
+  border-radius: 4px;
+  background-color: #74c92c;
+  font-weight: 400;
+  min-width: 100px;
+}
+
+.muutto-button:hover {
+  background-color: #499a04;
+  transition: ease-in all 0.5s;
+  cursor: pointer;
+}
+
+.muutto-form-container {
+  padding-top: 40px;
+}
+
+.muutto-form-container .muutto-input-group {
+  margin-bottom: 20px;
+}
+
+.muutto-form-container .muutto-input-group .muutto-label {
+  margin-bottom: 5px;
+  display: block;
+}
+
+.muutto-step-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+a.muutto-link {
+  color: #6c757d;
+  text-decoration: underline;
+}
+
+a.muutto-link:hover {
+  cursor: pointer;
+}
+
+button.muutto-link {
+  color: #6c757d;
+  text-decoration: underline;
+  background-color: transparent;
+  border: none;
+  font-size: 16px;
+}
+
+button.muutto-link:hover {
+  cursor: pointer;
+}
+
+.ms-coupon__form{
+  display: flex;
+  margin-top: 15px;
+}
+
+.ms-coupon__form input{
+  width: 150px;
+}
+
+.ms-coupon__form button{
+  height: 36px;
+  margin-left: 10px;
+}
+
+.ms-coupon p{
+  color: red;
+  font-size: 13px;
+  margin-left: 6px;
+}
+
+.ms-coupon__is-valid{
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.ms-coupon__is-valid p{
+  color: #74c92c;
+  font-size: 16px;
+}
+
+.ms-coupon__is-valid button span{
+  margin-right: 7px;
+  padding-bottom: 2.9px;
+}
+
+.ms-coupon__is-valid p span{
+  color: black;
+  font-size: 14px;
+}
+
+.discount-price{
+  color: gray;
+  font-size: 14px;
+  text-decoration: line-through;
+  margin: 0 5px;
+}
+
+.thank-you {
+  margin: 0 auto;
+  width: 600px;
+  margin-top: 60px;
+  text-align: center;
+}
+
+.thank-you h3 {
+  color: #479670;
+  font-weight: 300;
+  line-height: 26px;
+}
+
+/*X-Small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) {
+  .muutto-nav__item {
+    flex-direction: column;
+  }
+}
+
+/*Small devices (landscape phones, less than 768px)*/
+@media (max-width: 767.98px) {
+}
+
+/*Medium devices (tablets, less than 992px)*/
+@media (max-width: 991.98px) {
+}
+
+/*Large devices (desktops, less than 1200px)*/
+@media (max-width: 1199.98px) {
+}
+
+/*X-Large devices (large desktops, less than 1400px)*/
+@media (max-width: 1399.98px) {
+}
+
+.loader {
+  width: 25px;
+  height: 24px;
+}
+
+.loader__circular {
+  -webkit-animation: rotate 2s linear infinite;
+  animation: rotate 2s linear infinite;
+  -webkit-transform-origin: center center;
+  transform-origin: center center;
+}
+
+.loader__path {
+  stroke-dasharray: 1, 200;
+  stroke-dashoffset: 0;
+  -webkit-animation: dash 2.5s ease-in-out infinite, 6s ease-in-out infinite;
+  animation: dash 2.5s ease-in-out infinite, 6s ease-in-out infinite;
+  stroke-linecap: round;
+  stroke-width: 5px;
+  stroke: white;
+}
+
+@-webkit-keyframes rotate {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate {
+  100% {
+    -webkit-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+@-webkit-keyframes dash {
+  0% {
+    stroke-dasharray: 1, 200;
+    stroke-dashoffset: 0;
+  }
+  50% {
+    stroke-dasharray: 89, 200;
+    stroke-dashoffset: -35px;
+  }
+  100% {
+    stroke-dasharray: 89, 200;
+    stroke-dashoffset: -124px;
+  }
+}
+
+@keyframes dash {
+  0% {
+    stroke-dasharray: 1, 200;
+    stroke-dashoffset: 0;
+  }
+  50% {
+    stroke-dasharray: 89, 200;
+    stroke-dashoffset: -35px;
+  }
+  100% {
+    stroke-dasharray: 89, 200;
+    stroke-dashoffset: -124px;
+  }
+}
+
+.loader-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.language-switch {
+  float: right;
+  list-style: none;
+}
+
+.language-switch__item {
+  cursor: pointer;
+}
